@@ -1,0 +1,75 @@
+ docker container run infracloudio/csvserver:latest
+   45  clear
+   46  docker ps -a
+   47  docker logs f947b7bd5e44
+   48  clear
+   49  cd Dow
+   50  ls
+   51  pwd
+   52  cd ..
+   53  ls
+   54  cd inputFile/
+   55  ls
+   56  ls
+   57  pwd
+   58  docker run -d -v /Users/indianrenters/csvserver/inputFile:/csvserver/inputdata infracloudio/csvserver:latest
+   59  docker ps -a
+   60  count=1
+   61  while [ $count -lt 11 ]; do rand=$((RANDOM%100)); echo "$count, $rand" >> inputFile; count=$(($count+1)); done
+   62  ls
+   63  cd ..
+   64  ls
+   65  cd solution/
+   66  ls
+   67  vi input.sh
+   68  docker run -d -i -v /home/ec2-user/project/csvserver/inputFile:/csvserver/inputdata infracloudio/csvserver:latest
+   69  docker run -d -i -v /Users/indianrenters/csvserver/inputFile:/csvserver/inputdata infracloudio/csvserver:latest
+   70  docker ps -a
+   71  docker logs 5f68e7aee086
+   72  ls
+   73  chmod 447 input.sh 
+   74  chmod u+x input.sh 
+   75  ./input.sh 
+   76  ls
+   77  pwd
+   78  docker run -d -i -v /Users/indianrenters/csvserver/solution/inputFile:/csvserver/inputdata infracloudio/csvserver:latest
+   79  ps -a
+   80  docker ps -a
+   81  clear
+   82  docker exec -it b504c84c322f bash
+   83  ls
+   84  docker ps -a
+   85  docker stop b504c84c322f
+   86  pwd
+   87  cd
+   88  cd Downloads/
+   89  cd csvserver/
+   90  cd solution/
+   91  ls
+   92  ls
+   93  ls
+   94  cd ..
+   95  ls
+   96  cd solution/
+   97  ls
+   98  cd sol
+   99  ls
+  100  cd
+  101  cd csvserver/
+  102  ls
+  103  cd solution/
+  104  ls
+  105  pwd
+  106  docker run -d -i -v /Users/indianrenters/csvserver/solution/inputFile:/csvserver/inputdata -p 9393:9300 infracloudio/csvserver:latest
+  107  docker ps -a
+  108  docker stop 317ec5477ce0 
+  109  docker run -d -i -v /Users/indianrenters/csvserver/solution/inputFile:/csvserver/inputdata -p 9393:9300 -e CSVSERVER_BORDER='Orange' infracloudio/csvserver:latest
+  110  ls
+  111  vi README.md
+  112  vi README.md
+  113  ls
+  114  mv input.sh gencsv.sh
+  115  ls
+  116  history
+IndianRenterss-MacBook-Pro:solution indianrenters$ 
+
